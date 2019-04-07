@@ -1,0 +1,58 @@
+.inner{
+    background-image: url(../img/img01.jpg);
+    background-attachment: fixed;
+    height: 100vh; 
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list-area{
+    background-image: url(../img/img02.jpg);
+    background-attachment: fixed;
+    height: 64vh; 
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-area{
+    background-image: url(../img/img03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.shadow{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* LIST */
+#list {
+    position: absolute;
+    top: 0;
+    transform: translate(0%, 0%);
+}
+#list ol {
+    font-style:italic;
+    font-family:Georgia, Times, serif;
+    font-size:24px; color:#bfe1f1;
+    margin-top: 30px;
+}
+#list ol li p {
+    padding:8px;
+    font-style:normal;
+    font-family:Arial;
+    font-size:13px; color:#eee; border-left: 1px solid #999;
+}
+#list ol li p em {
+    display:block;
+}
+

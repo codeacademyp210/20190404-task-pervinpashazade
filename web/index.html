@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid m-0 p-0">
+            <div class="row  m-0 p-0">
+                <div class="col-lg-12  m-0 p-0">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <a class="navbar-brand" href="#">Car Form</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid mx-0 p-0">
+            <div class="row mx-0 p-0">
+                <div class="col-lg-12 mx-0 p-0">
+                    <div class="inner">
+                        <div class="container">
+                            <div class="row m-0 p-0">
+                                <div class="col-lg-6 m-0 p-0">
+                                    <div id="list">
+                                        <ol>
+                                            <li>
+                                                <p><em>Swipe down the screen</em></p>
+                                            </li>
+                                            <li>
+                                                <p><em>Fill out the form</em></p>
+                                            </li>
+                                            <li>
+                                                <p><em>Look at the Results</em></p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid m-0 p-0">
+            <div class="row m-0 p-0">
+                <div class="col-lg-12 m-0 p-0">
+                    <div class="wrap">
+                        <div id="arrow-left" class="arrow"></div>
+                        <div id="slider">
+                            <div class="slide slide1">
+                                <div class="slide-content">
+                                    <span>Porsche 911 Carrera</span>
+                                </div>
+                            </div>
+                            <div class="slide slide2">
+                                <div class="slide-content">
+                                    <span>Chevrolet Camaro ZL1</span>
+                                </div>
+                            </div>
+                            <div class="slide slide3">
+                                <div class="slide-content">
+                                    <span>Ford Mustang</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="arrow-right" class="arrow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid mx-0 p-0">
+            <div class="form-area">
+                <div class="row shadow mx-0 pt-4 d-flex justify-content-center">
+
+                    <div class="col-lg-5">
+                        <form name="carForm" onsubmit="return validateForm()">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="nameInput" id="nameInput"
+                                    placeholder="Enter Manufacturer">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="modelInput" id="modelInput"
+                                    placeholder="Enter Model">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="yearInput" id="yearInput"
+                                    placeholder="Enter Release year">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <button type="submit" value="Submit" class="btn btn-primary">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mx-0 p-0">
+            <div class="row mx-0 p-0">
+                <div class="col-lg-12 mx-0 p-0">
+                    <div class="list-area">
+
+                        <div class="row mx-0 px-0 pt-5">
+                            <div class="col-12">
+                                <p class="d-block">Sort list by</p>
+                                <button class="btn btn-outline-info" onclick="sortById()">ID</button>
+                                <button class="btn btn-outline-info" onclick="sortByName()">Name</button>
+                                <button class="btn btn-outline-info" onclick="sortByModel()">Model</button>
+                            </div>
+
+                            <div class="col-4 mt-2">
+                                <ul id="car-list" class="list-group">
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mx-0 p-0">
+            <div class="row mx-0 p-0">
+                <div class="col-lg-12 mx-0 p-0"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/slideScript.js"></script>
+</body>
+
+</html>
